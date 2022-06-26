@@ -7,38 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>biglietto treno</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-<!-- sezione ticket form da compilare -->
+    <!-- sezione ticket form da compilare -->
     <section id="ticket-form">
-    <form>
-        <label for="fname">Nome Cognome:</label>
-        <input type="text" id="name" name="fname" value="federico"><br><br>
-        <label for="lname">Distanza da percorrere:</label>
-        <input type="number" id="distance" name="lname" value="100"><br><br>
-        <label for="age">Seleziona la tua età:</label>
-        <select name="" id="age">
-            <option value="underAge">minore di 18</option>
-            <option value="normalAge">18-65</option>
-            <option value="overAge">over 65</option>
-        </select>
-        <button type="button" id="buy">genera</button>
-        <button type="button" id="cancel">cancella</button>
-    </form>
-</section>
+        <form>
+            <label for="fname">Nome Cognome:</label>
+            <input type="text" id="name" name="fname" value="federico"><br><br>
+            <label for="lname">Distanza da percorrere:</label>
+            <input type="number" id="distance" name="lname" value="100"><br><br>
+            <label for="age">Seleziona la tua età:</label>
+            <select name="" id="age">
+                <option value="underAge">minore di 18</option>
+                <option value="normalAge">18-65</option>
+                <option value="overAge">over 65</option>
+            </select>
+            <button type="button" id="buy">genera</button>
+            <button type="button" id="cancel">cancella</button>
+        </form>
+    </section>
 
-<!-- sezione ticket da stampare -->
-<section id="ticket-stamp">
-    <div id="passenger-name">nome passeggero</div>
-    <div id="discount">offerta</div>
-    <div id="car">carrozza</div>
-    <div id="cp-code">codice CP</div>
-    <div id="ticket-price">costo biglietto</div>
-</section>
+    <!-- sezione ticket da stampare -->
+    <section id="ticket-stamp">
+        <h2 id="passenger-name">nome passeggero</h2>
+        <h2 id="discount">offerta</h2>
+        <h2 id="car">carrozza</h2>
+        <h2 id="cp-code">codice CP</h2>
+        <h2 id="ticket-price">costo biglietto</h2>
+    </section>
 
 
 

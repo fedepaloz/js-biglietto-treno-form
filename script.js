@@ -18,6 +18,8 @@ const ticketPrice = document.getElementById("ticket-price");
 
 
 buttonBuy.addEventListener("click", function () {
+    
+    
     const nameValue = nameInput.value;
     const distanceValue = distanceInput.value;
     const ageValue = ageInput.value;
@@ -58,9 +60,23 @@ buttonBuy.addEventListener("click", function () {
 
     console.log(finalPrice, discountLabel)
 
+    //stampo i dati nel biglietto a schermo
+
+    passengerName.innerText = nameValue
+    discount.innerText = discountLabel 
+    car. innerText = "24"
+    cpCode.innerText = "123456"
+    ticketPrice.innerText = finalPrice
+
+
 
 
 });
+
+
+
+ 
+
 
 
 
