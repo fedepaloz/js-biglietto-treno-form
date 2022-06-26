@@ -18,8 +18,8 @@ const ticketPrice = document.getElementById("ticket-price");
 
 
 buttonBuy.addEventListener("click", function () {
-    
-    
+
+
     const nameValue = nameInput.value;
     const distanceValue = distanceInput.value;
     const ageValue = ageInput.value;
@@ -41,32 +41,34 @@ buttonBuy.addEventListener("click", function () {
 
 
     //vairabile del prezzo finale in base alla fascia di età selezionata
-    
+
     let finalPrice
     let discountLabel = "tariffa normale"
 
     if (ageValue === "underAge") {
         finalPrice = underAgeDiscount;
         discountLabel = "tariffa minori"
-       
+
     }
     else if (ageValue === "overAge") {
         finalPrice = overAgeDiscount;
         discountLabel = "tariffa anziani"
     }
 
-    else { finalPrice = ticketPriceNormal;
-    discountLabel}
+    else {
+        finalPrice = ticketPriceNormal;
+        discountLabel
+    }
 
     console.log(finalPrice, discountLabel)
 
     //stampo i dati nel biglietto a schermo
 
     passengerName.innerText = nameValue
-    discount.innerText = discountLabel 
-    car. innerText = "24"
+    discount.innerText = discountLabel
+    car.innerText = "24"
     cpCode.innerText = "123456"
-    ticketPrice.innerText = finalPrice
+    ticketPrice.innerText = finalPrice.toFixed(2)
 
 
 
@@ -75,7 +77,7 @@ buttonBuy.addEventListener("click", function () {
 
 
 
- 
+
 
 
 
